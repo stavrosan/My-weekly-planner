@@ -13,10 +13,12 @@
   <header>
 
     <!--Bootstrap navbar-->
-    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">WeeklyPlanner</a>
+          <svg style="color:aliceblue" xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+          </svg>   <a class="navbar-brand" href="#">WeeklyPlanner</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,18 +52,18 @@
       <!--Hero content with bg-image and text from bootstrap-->
 
     <div class="p-5 text-center bg-image rounded-3"  style="height:300px; background-image: url('../Images/heroimg.jpg');">
-     
-    <div class="mask" style="width: 100%; height:50%; background-color:  rgba(184, 182, 182, 0.208);">
-      <div class="d-flex justify-content-center">
+     <div class="d-flex justify-content-center">
+        <div class="mask" style="width: 30%; height:30%; background-color:  rgba(184, 182, 182, 0.208);">
         <div class="text-black">
           <h1 class="mb-3">WEEKLY PLANS</h1>
+        </div>
         </div>
       
     </div>
   </div>
 </div>
 <nav class="navbar justify-content-around">
-  <a class="navbar-brand">Weekly tasks</a>
+  <h3 class="font-weight-bold">Weekly tasks</h3>
   <form class="form-inline">
   <button id="btnSort" class="btn btn-outline-dark">Sort tasks by priority</button><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
       <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
@@ -76,7 +78,7 @@
 <!--Div container with id(result) with bootstrap screen breakpoints-->
 
 <div class="container">
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1" id="result">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-xs-1 g-3" id="result">
 
 
         
