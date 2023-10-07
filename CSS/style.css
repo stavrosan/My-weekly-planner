@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+
+
+
+.bg-image{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.mb-3{
+    padding: 20px 20px;
+    
+}
+
+
+
+footer{
+    margin:10px 10px; ;
+    padding:10px 10px;
+    background-color: black;
+    }
+
+footer p {
+    color:aliceblue;
+    text-align:center;
+    margin-top: 4px;
+}
+
+
+.label{
+    color:aliceblue;
+}
+
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid aliceblue;
+    color:aliceblue;
+}
+
+#links{
+   text-align: center;
+  }
+
