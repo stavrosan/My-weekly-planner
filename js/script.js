@@ -41,31 +41,37 @@ btn.addEventListener("click", function () {
     inImportance(i)
 })
 );
+
+
  
 //function that stops counting on 5 and +1 index num 
-let color = "";
+//let color = "";
 
 function inImportance(i) {
     if (taskList[i].importance<5){   
     taskList[i].importance++;
     console.log(taskList[i]);
     document.querySelectorAll(".import")[i].innerText = taskList[i].importance;
-    btns[i].style.backgroundColor = bagColor(taskList[i].importance);
+    //btns[i].style.backgroundColor = bagColor(taskList[i].importance);
+    //btns[i].classList.remove(bagColor(taskList[i].importance));
+    btns[i].classList.add(bagColor(taskList[i].importance));
+
 }
 }
 //function to change the color of the importance button on different count clicks
-
 function bagColor(importance) {
-if (importance == 2 || 3) {
-    return "btn-warning";
-} else if (importance == 4 || 5) {
-    return "btn-danger";
-}
-    else{
-        return "btn-success";
-}
-} 
-console.log(bagColor);
+    if (importance == 2 && 3) {
+        return "btn-warning";
+    } else if (importance == 4 && 5) {
+        return "btn-danger";
+    }
+        else{
+            return "btn-success";
+    }
+    } 
+
+
+//console.log(bagColor);
 
 //Sorting items button from most clicks to less clicks. 
 //forEach loop for every task(item) and get id(result) from container in HTML
