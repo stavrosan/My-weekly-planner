@@ -89,7 +89,7 @@ a{
         display:flex;
         flex-direction:column;
         width:500px;
-        height: 600px;
+        height: 550px;
         max-width: 100%;
         margin-bottom: 5px;
         
@@ -99,13 +99,13 @@ a{
       width: 100%;
       height: 100%;
       max-width: 450px;
-      max-height: 200px;
+      max-height: 150px;
       object-fit: cover;
     
     }
 
     .card-body{
-        padding:0px;
+        padding:10px 0px;
     }
 }
 
@@ -113,7 +113,7 @@ a{
     
     .card{
         display:flex;
-        width: 600px;
+        width: 650px;
         height: 550px;
         max-width: 100%;
         max-height: 100%;
@@ -135,7 +135,7 @@ a{
         height: 100%;
         max-width: 500px;
         max-height: 300px;
-        padding:20px;
+        padding:5px 0px;
     
     }
    
@@ -144,7 +144,6 @@ a{
         padding: 0;
     }
     .mask{
-        width: 100%;
         background-color:  rgba(72, 69, 69, 0);
 
     }
@@ -154,11 +153,11 @@ a{
 
    @media screen and (max-width:480px){
     .mb-3{
-        padding: 10px;
+        padding: 0px;
+
     
     } 
     .mask{
-        max-width: 100%;
         background-color:  rgba(72, 69, 69, 0);
     }
 
