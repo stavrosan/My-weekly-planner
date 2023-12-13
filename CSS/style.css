@@ -30,7 +30,9 @@
     transition: all 300ms ease;
     border-radius: 2px;
 
-}.card{
+}
+
+.card{
     display:flex;
     flex-direction:column;
     width:450px;
@@ -46,10 +48,7 @@
   max-width: 400px;
   max-height: 200px;
   object-fit: cover;
-
 }
-
-
 
 .cardColor{
     background-color: rgba(255, 255, 0, 0.635);
@@ -88,18 +87,17 @@ a{
     .card{
         display:flex;
         flex-direction:column;
-        width:500px;
+        width:450px;
         height: 550px;
         max-width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         
     }
     
     .card-img-top{
       width: 100%;
-      height: 100%;
       max-width: 450px;
-      max-height: 150px;
+      max-height: 180px;
       object-fit: cover;
     
     }
@@ -113,10 +111,8 @@ a{
     
     .card{
         display:flex;
-        width: 650px;
-        height: 550px;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 550px;
         margin-bottom: 2px;
         
     }
@@ -131,12 +127,9 @@ a{
     }
 
     .card-body{
-        width: 100%;
-        height: 100%;
-        max-width: 500px;
-        max-height: 300px;
-        padding:5px 0px;
-    
+        max-width: 100%;
+        max-height: 100%;
+        padding: 10px 0;
     }
    
     

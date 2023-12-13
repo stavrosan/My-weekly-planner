@@ -11,7 +11,8 @@ console.log(taskList);
 taskList.forEach(item => {
     
     document.getElementById("result").innerHTML +=
-     `<div class="col mb-4 d-flex flex">
+     `
+     <div class="col mb-4">
      <div class="card text-center p-3">
      <div class="d-flex justify-content-between align-items-center">
     <span class="mb-2">
@@ -30,9 +31,7 @@ taskList.forEach(item => {
       </div>
       </div>
       </div>
-`;
-
-
+      `;
 });
 
 
@@ -56,15 +55,12 @@ btn.addEventListener("click", function () {
 
  
 //function that stops counting on 5 and +1 index num 
-//let color = "";
 
 function inImportance(i) {
     if (taskList[i].importance<5){   
     taskList[i].importance++;
     console.log(taskList[i]);
     document.querySelectorAll(".import")[i].innerText = taskList[i].importance;
-    //btns[i].style.backgroundColor = bagColor(taskList[i].importance);
-    //btns[i].classList.remove(bagColor(taskList[i].importance));
     btns[i].classList.add(bagColor(taskList[i].importance));
 
 }
@@ -74,8 +70,6 @@ function inImportance(i) {
 
 function doneColor(i) {
     const cards = document.querySelectorAll(".card");
-    //card(i).style.backgroundColor="green";
-    //cards[i].classList.add('cardColor');
     cards[i].style.opacity="0.3";
 }
 
@@ -85,17 +79,13 @@ let doneBtns = document.querySelectorAll(".done");
 
 doneBtns.forEach((donebtn, i)=>{
     donebtn.addEventListener('click', ()=>{
-        //const card = document.querySelectorAll('.card')[index];
-        //card.style.transition = 'all 1s ease';
-        //card.classList.toggle('green');
-        //this.closest("div.col").toggle();
         doneColor(i);
     })
 })
 
 
 
-//Deletes cards radomnly not the specific one with the same delete button
+//Function that deletes card with the same delete button
 function removeTask(i) {
    taskList.splice(i,1);
 }
@@ -106,15 +96,9 @@ let removeBtns = document.querySelectorAll(".remove");
    removeBtn.addEventListener("click",function(){
      
     this.closest("div.col").remove();
-    // console.log(removeBtn.closest("div.col"));
-    // newelment.remove()
-    //  card.style.opacity = '0' //deletes only when the opacity is 0
-     //taskList.splice(i,1);
-     //result.removeChild(result.children[i]);
      removeTask(i);
    
-     
-    })
+      })
 })
 
 
@@ -145,8 +129,9 @@ document.getElementById("btnSort").addEventListener("click", function () {
     newTask.forEach(item => {
        
      document.getElementById("result").innerHTML +=
-      `<div class="col mb-4 d-flex flex">
-      <div class="card text-center p-3">
+      `
+     <div class="col mb-4">
+     <div class="card text-center p-3">
       <div class="d-flex justify-content-between align-items-center">
         <span class="mb-2">
         <button class="btn btn-outline-info btn-sm text-dark fs-8 task-btn">Task</button></span>
@@ -164,6 +149,7 @@ document.getElementById("btnSort").addEventListener("click", function () {
         </div>
       </div>
       </div>
+      
     `;
     });
 
