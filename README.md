@@ -8,7 +8,7 @@ User can delete a task by clicking delete button or
 complete task by clicking done button.
 
 Built with:
-Javascript
-HTML5
-CSS3
+Javascript,
+HTML5,
+CSS3.
 
