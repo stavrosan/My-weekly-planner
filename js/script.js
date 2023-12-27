@@ -1,13 +1,10 @@
 let taskList = JSON.parse(tasks);
 console.log(taskList);
-
-
-
-
 //Created objects of a JSON array
-//ForEach loop+=to get all the objects values on bootstrap cards with the id(result) of the container in HTML file
 
 
+
+//ForEach loop+=to get all the objects values of the container in HTML file
 taskList.forEach(item => {
     
     document.getElementById("result").innerHTML +=
@@ -38,7 +35,7 @@ taskList.forEach(item => {
 
 
 
-//Select the button to add eventlistener onclick
+//Button to add eventlistener onclick
 
 let btns = document.querySelectorAll(".myBtn");
 
