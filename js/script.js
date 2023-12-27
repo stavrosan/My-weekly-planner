@@ -12,25 +12,25 @@ taskList.forEach(item => {
     
     document.getElementById("result").innerHTML +=
      `
-     <div class="col mb-4">
-     <div class="card text-center p-3">
-     <div class="d-flex justify-content-between align-items-center">
-    <span class="mb-2">
-    <button class="btn btn-outline-info btn-sm text-dark fs-8 task-btn">Task</button></span>
-    <i class="fa-regular fa-bookmark fa-xl" style="color: #bed31d;"></i></div>
-    <img src="${item.image}" class="card-img-top img-fluid imgBx img-thumbnail">
-    <div class="card-body">
-      <h3 class="card-title">${item.taskName}</h3>
-      <p class="card-text">${item.description}</p>
-      <hr>
-      <h5><i class="fa-solid fa-triangle-exclamation"></i> Priority level:
-      <button class="btn btn-success myBtn"><span class="import">${item.importance}</span></button></h5>
-      <hr>
-      <p>Day and Time: ${item.dayTime} <br> Expected duration: ${item.duration} hour(s).</p>
-      <button class="btn btn-success done"><i class="fa-solid fa-circle-check"></i> Done </button> <button class="btn btn-danger remove"><i class="fa-solid fa-trash-can"></i> Delete</button>
+    <div class="col mb-4">
+      <div class="card text-center p-3">
+       <div class="d-flex justify-content-between align-items-center">
+        <span class="mb-2">
+        <button class="btn btn-outline-info btn-sm text-dark fs-8 task-btn">Task</button></span>
+        <i class="fa-regular fa-bookmark fa-xl" style="color: #bed31d;"></i></div>
+        <img src="${item.image}" class="card-img-top img-fluid imgBx img-thumbnail" alt="${item.taskName}">
+        <div class="card-body">
+        <h3 class="card-title">${item.taskName}</h3>
+        <p class="card-text">${item.description}</p>
+        <hr>
+        <h5><i class="fa-solid fa-triangle-exclamation"></i> Priority level:
+        <button class="btn btn-success myBtn"><span class="import">${item.importance}</span></button></h5>
+        <hr>
+        <p>Day and Time: ${item.dayTime} <br> Expected duration: ${item.duration} hour(s).</p>
+        <button class="btn btn-success done"><i class="fa-solid fa-circle-check"></i> Done </button> <button class="btn btn-danger remove"><i class="fa-solid fa-trash-can"></i> Delete</button>
       </div>
-      </div>
-      </div>
+     </div>
+    </div>
       `;
 });
 
@@ -130,13 +130,13 @@ document.getElementById("btnSort").addEventListener("click", function () {
        
      document.getElementById("result").innerHTML +=
       `
-     <div class="col mb-4">
+    <div class="col mb-4">
      <div class="card text-center p-3">
       <div class="d-flex justify-content-between align-items-center">
         <span class="mb-2">
         <button class="btn btn-outline-info btn-sm text-dark fs-8 task-btn">Task</button></span>
         <i class="fa-regular fa-bookmark fa-xl" style="color: #bed31d;"></i></div>
-        <img src="${item.image}" class="card-img-top img-fluid imgBx img-thumbnail">
+        <img src="${item.image}" class="card-img-top img-fluid imgBx img-thumbnail" alt="${item.taskName}">
         <div class="card-body">
         <h3 class="card-title">${item.taskName}</h3>
         <p class="card-text">${item.description}</p>
@@ -148,7 +148,7 @@ document.getElementById("btnSort").addEventListener("click", function () {
         <button class="btn btn-success done"><i class="fa-solid fa-circle-check"></i> Done </button> <button class="btn btn-danger remove"><i class="fa-solid fa-trash-can"></i> Delete</button>
         </div>
       </div>
-      </div>
+    </div>
       
     `;
     });
